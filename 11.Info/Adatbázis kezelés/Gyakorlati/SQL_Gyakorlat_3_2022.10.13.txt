@@ -1,0 +1,45 @@
+ 
+
+1. 
+
+SELECT * FROM Customers  
+WHERE CustomerName LIKE 'm%'  
+AND Country IN ('Italy', 'Belgium')  
+
+ 
+
+2. 
+
+SELECT * FROM Customers  
+WHERE Country LIKE 'Germany'  
+AND City NOT LIKE 'Berlin'  
+
+ 
+
+3. 
+
+SELECT * FROM Customers  
+WHERE Country = 'Germany'  
+AND City IN ('Berlin','Stuttgart')  
+
+ 
+
+4. 
+
+SELECT * FROM [Products]  
+WHERE Price < 20 AND ProductName LIKE 'g%'  
+OR ProductName LIKE 'a%'  
+
+ 
+
+5. 
+
+SELECT * FROM Products  
+WHERE Price < 20 AND (ProductName LIKE "g%" OR ProductName LIKE "a%")  
+
+ 
+
+6. 
+
+SELECT * FROM [Customers]  
+WHERE Country NOT IN ('Germany', 'France')  

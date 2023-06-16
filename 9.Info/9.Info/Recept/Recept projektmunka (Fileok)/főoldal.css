@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-family: Arial;
+    size: 50px;
+    color: #c7691d;
+}
+
+h2 {
+    color: #c7691d;
+}
+
+#keret {
+    background-color: #809bf1;
+    margin: auto;
+    padding: 30px;
+    color: #c7691d;
+    width: 1080px;
+}
+
+a {
+    font-size: larger;
+    color: #f0832a;
+    text-align: justify;
+}
+
+img {
+    border: 2px solid #fbff00;
+    width: 700px;
+    width: 500px;
+
+}
+
+hr.vonal1 {
+   border-top: 10px solid white;
+}
+
+a:visited {
+    color: purple;
+}
+
+/*Készítette: Tóth Patrik 9.C*/

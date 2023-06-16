@@ -1,0 +1,7 @@
+34;Edámi;3067
+61;Trappista;2490
+25;Camembert;8360
+58;Parmezán;13866
+84;Feta;2300
+18;Ementáli;4290
+31;Cheddar;3690

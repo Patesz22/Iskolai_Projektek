@@ -1,0 +1,257 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+ip dhcp pool vlan214
+ network 10.10.0.0 255.255.255.224
+ default-router 10.10.0.1
+ dns-server 10.10.1.50
+ip dhcp pool vlan215
+ network 10.10.0.32 255.255.255.224
+ default-router 10.10.0.33
+ dns-server 10.10.1.50
+ip dhcp pool vlan213
+ network 10.10.0.64 255.255.255.224
+ default-router 10.10.0.65
+ dns-server 10.10.1.50
+ip dhcp pool vlan209
+ network 10.10.0.96 255.255.255.224
+ default-router 10.10.0.97
+ dns-server 10.10.1.50
+ip dhcp pool vlan212
+ network 10.10.0.128 255.255.255.224
+ default-router 10.10.0.129
+ dns-server 10.10.1.50
+ip dhcp pool vlan218
+ network 10.10.0.160 255.255.255.224
+ default-router 10.10.0.161
+ dns-server 10.10.1.50
+ip dhcp pool vlan113
+ network 10.10.0.192 255.255.255.224
+ default-router 10.10.0.193
+ dns-server 10.10.1.50
+ip dhcp pool vlan114
+ network 10.10.0.224 255.255.255.224
+ default-router 10.10.0.225
+ dns-server 10.10.1.50
+ip dhcp pool vlan117
+ network 10.10.1.0 255.255.255.224
+ default-router 10.10.1.1
+ dns-server 10.10.1.50
+ip dhcp pool vlan14
+ network 10.10.1.32 255.255.255.240
+ default-router 10.10.1.33
+ dns-server 10.10.1.50
+ip dhcp pool vlan10
+ network 10.10.1.48 255.255.255.248
+ default-router 10.10.1.49
+ dns-server 10.10.1.50
+ip dhcp pool vlan21
+ network 10.10.1.56 255.255.255.248
+ default-router 10.10.1.57
+ dns-server 10.10.1.50
+ip dhcp pool vlan103
+ network 10.10.1.64 255.255.255.248
+ default-router 10.10.1.65
+ dns-server 10.10.1.50
+ip dhcp pool vlan106
+ network 10.10.1.72 255.255.255.248
+ default-router 10.10.1.73
+ dns-server 10.10.1.50
+ip dhcp pool vlan108
+ network 10.10.1.80 255.255.255.248
+ default-router 10.10.1.81
+ dns-server 10.10.1.50
+ip dhcp pool vlan111
+ network 10.10.1.88 255.255.255.248
+ default-router 10.10.1.89
+ dns-server 10.10.1.50
+ip dhcp pool vlan112
+ network 10.10.1.96 255.255.255.248
+ default-router 10.10.1.97
+ dns-server 10.10.1.50
+ip dhcp pool vlan2
+ network 10.10.1.104 255.255.255.248
+ default-router 10.10.1.105
+ dns-server 10.10.1.50
+ip dhcp pool vlan206
+ network 10.10.1.112 255.255.255.248
+ default-router 10.10.1.113
+ dns-server 10.10.1.50
+ip dhcp pool vlan207
+ network 10.10.1.120 255.255.255.248
+ default-router 10.10.1.121
+ dns-server 10.10.1.50
+ip dhcp pool vlan216
+ network 10.10.1.128 255.255.255.248
+ default-router 10.10.1.129
+ dns-server 10.10.1.50
+ip dhcp pool vlan217
+ network 10.10.1.136 255.255.255.248
+ default-router 10.10.1.137
+ dns-server 10.10.1.50
+
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524VKEC-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 10.10.1.105 255.255.255.248
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.10.1.49 255.255.255.248
+!
+interface GigabitEthernet0/0.14
+ encapsulation dot1Q 14
+ ip address 10.10.1.33 255.255.255.240
+!
+interface GigabitEthernet0/0.21
+ encapsulation dot1Q 21
+ ip address 10.10.1.57 255.255.255.248
+!
+interface GigabitEthernet0/0.108
+ encapsulation dot1Q 108
+ ip address 10.10.1.81 255.255.255.248
+!
+interface GigabitEthernet0/0.111
+ encapsulation dot1Q 111
+ ip address 10.10.1.89 255.255.255.248
+!
+interface GigabitEthernet0/0.112
+ encapsulation dot1Q 112
+ ip address 10.10.1.97 255.255.255.248
+!
+interface GigabitEthernet0/0.113
+ encapsulation dot1Q 113
+ ip address 10.10.0.193 255.255.255.224
+!
+interface GigabitEthernet0/0.114
+ encapsulation dot1Q 114
+ ip address 10.10.0.225 255.255.255.224
+!
+interface GigabitEthernet0/0.117
+ encapsulation dot1Q 117
+ ip address 10.10.1.1 255.255.255.224
+!
+interface GigabitEthernet0/0.206
+ encapsulation dot1Q 206
+ ip address 10.10.1.113 255.255.255.248
+!
+interface GigabitEthernet0/0.207
+ encapsulation dot1Q 207
+ ip address 10.10.1.121 255.255.255.248
+!
+interface GigabitEthernet0/0.212
+ encapsulation dot1Q 212
+ ip address 10.10.0.129 255.255.255.224
+!
+interface GigabitEthernet0/0.213
+ encapsulation dot1Q 213
+ ip address 10.10.0.65 255.255.255.224
+!
+interface GigabitEthernet0/0.214
+ encapsulation dot1Q 214
+ ip address 10.10.0.1 255.255.255.224
+!
+interface GigabitEthernet0/0.215
+ encapsulation dot1Q 215
+ ip address 10.10.0.33 255.255.255.224
+!
+interface GigabitEthernet0/0.216
+ encapsulation dot1Q 216
+ ip address 10.10.1.129 255.255.255.248
+!
+interface GigabitEthernet0/0.217
+ encapsulation dot1Q 217
+ ip address 10.10.1.137 255.255.255.248
+!
+interface GigabitEthernet0/0.218
+ encapsulation dot1Q 218
+ ip address 10.10.0.161 255.255.255.224
+!
+interface GigabitEthernet0/0.209
+ encapsulation dot1Q 209
+ ip address 10.10.0.97 255.255.255.224
+!
+interface GigabitEthernet0/0.106
+ encapsulation dot1Q 106
+ ip address 10.10.1.73 255.255.255.248
+!
+interface GigabitEthernet0/0.103
+ encapsulation dot1Q 103
+ ip address 10.10.1.65 255.255.255.248
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

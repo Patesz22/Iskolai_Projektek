@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Űrlap | Forms</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form>
+        <fieldset>
+        <label for="név">Add meg a neved!</label><br> <!--Beírós-->
+        <input type="text" name="név" value="Név">
+        <input type="password" name="jelszó"><br></fieldset>
+        
+        
+        <br><input type="radio" id="Fiú" name="nem" value="Fiú">    <!--Pöttyös-->
+        <label for="Fiú">Fiú</label><br>
+        <input type="radio" id="Lámy" name="nem" value="Lány">
+        <label for="Lány">Lány</label><br>
+        
+        <fieldset>
+        <br><input type="checkbox" id="tanul" name="tanulok" value="Tanulok">
+        <lable for="tanul">Tanulok</lable><br>  <!--Négyzet-->
+    </fieldset>
+
+        <fieldset>
+        <br><input type="button" onclick="alert('Szia!')" value="Kattints ide!"><br> <!--Kattintható gomb-->
+    </fieldset>
+
+        <!--https://www.w3schools.com/html/html_form_elements.asp-->
+        
+        <fieldset>
+        <br><label for="autó">Válassz egy autót!</label><br>
+        <select id="autó" name="autó" size="5">
+            <option value="bmw">BMW</option>
+            <option value="skoda">Skoda</option>
+            <option value="honda">Honda</option>
+            <option value="tesla" selected>Tesla</option>   <!--Legördülő menü-->
+            <option value="audi">Audi</option>
+        </select><br></fieldset>
+        
+
+        <fieldset>
+        <br><textarea name="üzetet" rows="10" cols="40"></textarea><br> <!--Szövegdoboz-->
+        </fieldset>
+
+        <br><br><input type="reset" value="Mégse">
+        <input type="submit" value="Bejelentkezés">
+    </form>
+      
+</body>
+</html>

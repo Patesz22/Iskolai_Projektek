@@ -1,0 +1,17 @@
+SELECT * FROM [Suppliers] INNER JOIN Products ON Suppliers.SupplierID=Products.SupplierID
+WHERE Products.Price > 15;
+
+SELECT * FROM Customers INNER JOIN Orders ON Orders.CustomerID=Customers.CustomerID
+WHERE Customers.CustomerName = "Alfreds Futterkiste"
+
+SELECT * FROM Products INNER JOIN OrderDetails ON Products.ProductID=OrderDetails.ProductID
+WHERE Products.ProductName = "Schoggi Schokolade";
+
+SELECT * FROM Orders INNER JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
+WHERE Shippers.ShipperName = "Speedy Express";
+
+SELECT Orders.OrderID, Orders.CustomerID FROM Employees INNER JOIN Orders On Employees.EmployeeID=Orders.EmployeeID
+WHERE Employees.FirstName = "Nancy" AND Employees.LastName = "Davolio";
+
+SELECT * FROM Products INNER JOIN Categories ON Products.CategoryID=Categories.CategoryID
+WHERE Categories.CategoryName = "Dairy Products";

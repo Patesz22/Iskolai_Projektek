@@ -1,0 +1,19 @@
+1. SELECT * FROM [Products]
+WHERE ProductName LIKE '_[hr]%'
+
+2. SELECT * FROM Employees 
+WHERE LastName LIKE '__[a-d]%'; 
+
+3. SELECT TOP 3 * FROM OrderDetails 
+ORDER BY QUANTITY DESC; 
+
+4. SELECT * FROM Customers 
+WHERE Country NOT IN ('USA', 'Australia', 'Canada'); 
+
+5. SELECT * FROM ORDERS WHERE OrderDate IS NULL 
+
+6. SELECT *, Quantity+1 AS Akció FROM OrderDetails; 
+
+7. SELECT *, Price*2 AS Növelt_ár FROM Products 
+
+SELECT *, Quantity+1 AS Akció FROM OrderDetails;

@@ -1,0 +1,9 @@
+Az alábbi dokumentumokat 
+
+Tóth Patrik || Főoldal.html és .css mézeskalács.html és .css
+
+Tőzsér Dániel || Receptesprojekt.html és recept.css
+
+Kronome Zsolt || Lecso.html és RLCS.css
+ 
+Szőke Simon || simon.html, készítette.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>Oldal címe</title>
+</head>
+<body>
+    <p id="test0">+</p>
+    <p id="test1">-</p>
+    <p id="test2">*</p>
+    <p id="test3">*</p>
+    <p id="test4">**</p>
+    <p id="test5">%</p>
+    <p id="test6">Text</p>
+    <script>
+        var x = 5;        
+        var y = 2;         
+        var z = x + y;
+        document.getElementById("test0").innerHTML = z;
+
+        z = x - y;
+        document.getElementById("test1").innerHTML = z;
+        
+        z = x * y;
+        document.getElementById("test2").innerHTML = z;
+
+        z = x / y;
+        document.getElementById("test3").innerHTML = z;
+
+        z = x ** y;
+        document.getElementById("test4").innerHTML = z;
+
+        z = x % y;
+        document.getElementById("test5").innerHTML = z;
+
+        z = "Próba1";
+        document.getElementById("test6").innerHTML = z;
+    </script>
+</body>
+</html>

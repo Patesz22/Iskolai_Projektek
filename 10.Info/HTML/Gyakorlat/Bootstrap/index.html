@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid p-5 bg-warning text-danger text-center">
+        <!--<h1>Test</h1>
+        <p class="h1">Test</p>
+        <p class="h2">Test</p>
+        <p class="h3">Test</p>
+        <p class="display-1">Test</p>
+        <p class="display-2">Test</p>
+        <p class="display-3">Test</p>-->
+        
+
+         <p class="display-1">Bootstrap oldal</p>
+         <p class="h1">Első bootstrap oldalünk</p>
+    
+        </div>
+        
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="https://classic.minecraft.net" target="_blank">Classic minecraft</a>
+                    </li>
+                    
+                </div>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-3 bg-dark text-white">
+                    <h3>Első oszlop</h3>
+                    <p>Ez az első oszlopunk.</p>
+                    <img src="sematikus.png" width="250" class="img-fluid">
+                
+                
+                </div>
+                <div class="col-sm-6 bg-primary text-white">
+                    <h3>Középső oszlop</h3>
+                    <p>Ez a középső oszlopunk.</p>
+                
+                    <dl>
+                        <dt>Kávé</dt>
+                            <dd> - Fekete kávé </dd>
+                        <dt>Tej</dt>
+                            <dd> - Fehér tej </dd>
+                    </dl>
+                    
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dávid</td>
+                                <td>Schneider</td>
+                                <td>schneider.david@blathy.info</td>
+                            </tr>
+                            <tr class="table-active">
+                                <td>Lajos</td>
+                                <td>Nagy</td>
+                                <td>nagy.lajos@freemail.hu</td>
+                            </tr>
+                            <tr>
+                                <td>Béla</td>
+                                <td>Végh</td>
+                                <td>vegh.bela@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="col-sm-3 bg-dark text-white">
+                    <h3>Utolsó oszlop</h3>
+                    <p>Ez az utolsó oszlopunk.</p>
+                    <div class="card">
+                        <img class="card-image-top" src="hatterkocka.png">
+                        <div class="card-body text-muted">
+                            <h4 class="card-title">Dávid Schneider</h4>
+                            <p class="card-text">Valami leírás fog ide kerülni.</p>
+                            <a href="https://shorturl.at/dBGQ7" target="_blank" class="btn btn-primary">Látodasd meg!</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-10 text-white">
+                    <button type="button" class="btn btn-primary">Alap</button>
+                    <button type="button" class="btn btn-primary btn-block">Alap</button>
+                    <button type="button" class="btn btn-primary disabled">Alap</button>
+                    
+                    <button class="btn btn-secondary">
+                        <span class="spinner-border spinner-border-sm"></span> 
+                        Valami
+                    </button>
+                    
+                    <br>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-link">link</button>
+                
+                </div>
+            </div>
+            <br>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-info">Apple</button>
+                <button type="button" class="btn btn-info">Samsung</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Sony
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Tablet</a>
+                        <a class="dropdown-item" href="#">Telefone</a>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="btn-group-horizontal">
+                <br><button type="button" class="btn btn-info">Apple</button>
+                <button type="button" class="btn btn-info">Samsung</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Sony
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Tablet</a>
+                        <a class="dropdown-item" href="#">Telefone</a>
+                    </div>
+                </button>
+            </div>
+
+            <button type="button" class="btn btn-primary">
+                Messages <span class="badge bg-danger">4</span>
+            </button>
+
+
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-11 text-white">
+                    <div class="progress">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="height: auto; width: 60%;">
+                            
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" style="width: 34%;">
+                        </div>
+                    
+                        <div class="progress-bar bg-warning" style="width: 32%;">
+                        </div>
+                    
+                        <div class="progress-bar bg-success" style="width: 34%;">
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Vissza</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Következő</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

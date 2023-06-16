@@ -1,0 +1,12 @@
+1.SELECT CustomerName FROM Customers WHERE Country = (SELECT Country FROM Customers WHERE CustomerName = "The Big Cheese");
+
+2.SELECT CustomerName FROM Customers WHERE City = (SELECT City FROM Customers WHERE CustomerName = "Seven Seas Imports");
+
+3.SELECT CustomerName FROM Customers WHERE Country = (SELECT Country FROM Customers WHERE ContactName = "Elizabeth Brown");
+
+4.SELECT FirstName, Lastname FROM Employees WHERE BirthDate > 
+(SELECT BirthDate FROM Employees WHERE FirstName = "Andrew" AND LastName = "Fuller");
+
+5.SELECT FirstName, Lastname FROM Employees WHERE BirthDate 
+BETWEEN(SELECT BirthDate FROM Employees WHERE FirstName = "Robert" AND LastName = "King") 
+AND (SELECT BirthDate FROM Employees WHERE FirstName = "Steven" AND LastName = "Buchanan")

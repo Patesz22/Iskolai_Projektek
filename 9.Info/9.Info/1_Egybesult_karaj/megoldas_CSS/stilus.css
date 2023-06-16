@@ -1,0 +1,60 @@
+﻿body {
+	font-family: verdana;
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+hr {
+	width: 60%;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+h1, h2 {
+	color: #f26600;
+}
+
+.tartalom {
+	width: 800px;
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	text-align: left;
+	background-color: #503b35;
+	color: #f4c69a;
+}
+
+.fejlec {
+	border: 0px;
+}
+
+.bal {
+	width: 400px;
+	margin: 0px;
+	float: left;
+	background-color: #503b35;
+	padding: 10px;
+}
+
+.jobb {
+	margin-left: 400px;
+	padding: 10px;
+	background-color: #503b35;
+}
+
+.lablec {
+    clear: both;
+    background-color: #503b35;
+    margin: 0 33%;
+}
+
+.kep {
+	text-align: center;
+	padding: 5px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #f26600;
+}
+

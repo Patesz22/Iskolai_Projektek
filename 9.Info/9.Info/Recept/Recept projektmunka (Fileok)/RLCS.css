@@ -1,0 +1,33 @@
+div{ background-color:white;
+
+font-family: Snell, Roundhand, cursive;
+margin: auto;
+
+ 
+}
+body {
+	background-color:white;
+	
+}
+h1{ 
+border-bottom:4px solid orange;
+text-align:center;
+}
+
+table {
+border:2px solid black;
+margin:auto;
+background-color:#146ED1;
+}
+ img#lecsó1{ 
+float:right;
+border:3px solid black ;
+margin:auto
+}
+img#lecsó2 {
+	float:left ;
+	margin:auto;
+	border:3px solid black;
+}   
+
+/*Készítette: Kronome Zsolt9.C*/

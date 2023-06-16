@@ -1,0 +1,63 @@
+nyers = open("adatok.txt")
+adatok = []
+
+for sor in nyers:
+    adatok.append(sor.strip().split("\t"))
+# print(adatok)
+
+nyers.close()
+
+db0 = 0
+db1 = 0
+db2 = 0
+for sor in adatok:
+    db2 += 1
+    if int(sor[0]) > 0:
+        db1 += 1
+    else:
+        db0 += 1
+print(f"Összesen {db2} féle pálinkát árusítanak. \nKészleten: {db1} db \nElfogyott: {db0} db")
+
+legnagyobb = []
+for sor in adatok:
+   legnagyobb.append(int(sor[2]))
+
+legn1 = " "
+legn = max(legnagyobb)
+
+for sor in adatok:
+    if int(sor[2]) == legn:
+        legn1 = sor[1]
+
+
+print(f"A legdrágább termék a {legn1.upper()} pálinka. Ára: {max(legnagyobb)} Ft")
+
+legtobb = []
+for sor in adatok:
+    legtobb.append(int(sor[0]))
+
+megold = 0
+megold1 = max(legtobb)
+
+for sor in adatok:
+    if int(sor[0]) == megold1:
+        megold = sor[1]
+
+
+print(f"A {megold.upper()} pálinkából van a legtöbb, {max(legtobb)} liter!")
+
+ossz = 0
+
+for sor in adatok:
+    ossz += int(sor[0]) * int(sor[2])
+print(f"Készleten {ossz * 0.000001} millió Ft áru van.")
+
+
+kiir = open("rendel.txt", "w")
+
+for sor in adatok:
+    if int(sor[0]) > 0:
+        kiir.write(sor[0] + "\t" + sor[1] + "\t" + sor[2] + "\t OK." + "\n")
+    else:
+        kiir.write(sor[0] + "\t" + sor[1] + "\t" + sor[2] + "\t Rendelni kell!!" + "\n")
+print(f"A \"{kiir.name}\" sikeresen létrehozva!")

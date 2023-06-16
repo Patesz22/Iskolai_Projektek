@@ -1,0 +1,45 @@
+div {
+    background-color: chocolate;
+}
+
+h1 {
+    color: white;
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: center;
+    font-style: normal;
+    
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.6cm;
+}
+
+h2 {
+    font-style: oblique;
+}
+
+li {
+    color: #f3ddae;
+} 
+
+a {
+    color: #abd8e6;
+    font-size: 0.5cm;
+}
+
+#kep2 {
+   float: left; 
+   margin: auto;
+}
+
+.img1 {
+    border: 5px solid #b3c07b;
+    padding: 5px;
+    overflow: auto;
+  }
+
+/*Készítette: Tóth Patrik 9.C*/
+
+
+

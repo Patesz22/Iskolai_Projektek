@@ -1,0 +1,39 @@
+hr {
+    border-top: 2px solid white;
+
+}
+
+img {
+    float: right;
+}
+
+div {
+   width: 600px;
+    margin: 0 auto 0 auto;
+    background-color: #4682B4;
+    color: #FFF5EE;
+    text-align: 10px;
+    padding: 10px;
+
+}
+
+
+body {
+    background-color: lightgray;
+    font-style: italic;
+}
+
+table {
+    float: right;
+    border: 1px dotted white;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Készítette: Tóth Patrik 9.C 2021.01.27*/

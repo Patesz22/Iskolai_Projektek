@@ -1,0 +1,8 @@
+Kálmán	Budapest	Fiatal
+Nóra	Debrecen	Fiatal
+Pista	Kecskemét	Idõs
+Bálint	Miskolc	Idõs
+Gábor	Budapest	Idõs
+Patrik	Székesfehérvár	Fiatal
+Lili	Cegléd	Fiatal
+Simon	Szekszárd	Idõs

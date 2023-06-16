@@ -1,0 +1,10 @@
+42	alma	6000	 OK.
+0	körte	3000	 Rendelni kell!!
+5	barack	9000	 OK.
+8	narancs	5500	 OK.
+10	vegyes	1200	 OK.
+0	krumpi	4100	 Rendelni kell!!
+220	szilva	2000	 OK.
+2	eper	6500	 OK.
+16	meggy	5000	 OK.
+60	rizs	10000	 OK.

@@ -1,0 +1,131 @@
+A hálózat erőforrások megosztására vannak kitalálva. 
+
+  
+
+Információ => Újdonságtartalommal rendelkező adat 
+
+Information Technology 
+
+  
+
+Kliens: Szolgáltatásokat vesz igénybe. 
+
+  
+
+Szerver: Szolgáltatást nyújt. 
+
+  
+
+Peer to peer: Egyszerre szerver és kliens. 
+
+  
+
+Fémdrót, üveg/műanyag, vezeték nélküli. 
+
+  
+
+NIC - Hálózati kártya: Csatlakoztatja a végberendezést a hálózathoz. 
+
+  
+
+Fizikai port: Csatlakozó. 
+
+  
+
+Interfész: Fizikai port, amely más hálózatokhoz csatlakozik. 
+
+  
+
+Topológia: Fizikai (Tervrajz szerű), logikai. 
+
+  
+
+SOHO hálózat (small ofiice home office) 
+
+KKV (Kis és közép vállalkozás) 
+
+Fizikai méret. 
+
+  
+
+LAN: Közvetlen kommuniáció (Local Area Network) 
+
+Routerek a LAN-ok határán helyezkedik el. 
+
+  
+
+LAN-ok gyorsabbak. 
+
+  
+
+WAN nagyobb területeket kapcsol össze. 
+
+Lasabbak. 
+
+  
+
+Internet Service Provider (ISP): Internetszolgáltató 
+
+  
+
+Szolgáltatók nem egyenrangúak, Tier 
+
+  
+
+Intranet: Mini internet. Ugyanaz de koréátozott. 
+
+  
+
+Extranet: (régi definíció) VPN-nel egyenértékű. 
+
+  
+
+Konvergált hálózat: Minden hálózati kábelen megy.  
+
+Megbízható hálózat: 
+
+Hibatűrés - Redundancia 
+
+Skálázhatóság - Bővíthetőség 
+
+Szolgáltatás minősége (Quality of Service - QoS) (Prioritás): 
+
+Dinamikusan osztja el a sávszélességet 
+
+Biztonság: 
+
+  
+
+Fizikai: 
+
+Az eszköz biztonsága 
+
+Logikai: 
+
+Szoftveresen 
+
+ 
+
+Redundáns: fölösleges (pót) 
+
+  
+
+RAID (Redundent Array of Independent Disks) 
+
+  
+
+RAID0 -   Csíkozás                 - Adat egyik fele egyik másikban másik fele, 1-nek annyi, adat elveszik 
+
+RAID1 -   Tükrözés                 - Több merevlemez összekötve, egyik meghal többiről még visszanyerhető az adat 
+
+RAID5 -   Paritás                  - 3 merevlemez adat egyiken egyikfele másikon másik fele 3-on részlet 
+
+RAID6 -   Dupla Paritás 
+
+RAID10 -  RAID1+RAID0 (kívül a 0)    az 1-et meg a 0-át összehozza, legalább 4 merevlemez kell, 
+
+RAID01 -  RAID0+RAID1 (Kívül az 1)   hasonló mint a 10  
+
+  
+
+Jogosultság,Integritás és Elérhetőség - Biztonság

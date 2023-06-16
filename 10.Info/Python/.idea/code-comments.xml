@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodeComments" version="1">
+    <comments>
+      <comment>
+        <place from="6774" to="6774">
+          <path mode="project">main.py</path>
+        </place>
+        <text />
+        <data>dasdasas</data>
+      </comment>
+      <comment>
+        <place from="145" to="157">
+          <path mode="project">main.py</path>
+        </place>
+        <text>#print(x, y)</text>
+        <data>Hello
+asd
+10</data>
+      </comment>
+    </comments>
+  </component>
+</project>

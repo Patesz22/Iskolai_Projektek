@@ -1,0 +1,7 @@
+1	.hely	22	2022.04.03-19:40:38	Roulette	10	360	36.0
+2	.hely	333	2022.04.03-19:40:38	Roulette	10	360	36.0
+3	.hely	fuihwe	2022.04.18-20:16:15	Roulette	3000	6000	2.0
+4	.hely	nfiwe	2022.04.18-20:23:10	G_Tycoon	3000	150000	50.0
+5	.hely	fnweiuhw	2022.04.18-20:25:34	G_Tycoon	3000	150000	50.0
+6	.hely	bfuiwgef	2022.04.18-20:27:48	S_Bonanza	3000	30000	10
+7	.hely	bczuew	2022.04.18-20:30:21	Blackjack	30000	60000	2.0

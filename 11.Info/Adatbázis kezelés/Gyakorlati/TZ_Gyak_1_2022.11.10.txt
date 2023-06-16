@@ -1,0 +1,66 @@
+1. Listázd ki Maria Montessori és Carl Zeiss rendeléseit (minden adat)!
+SELECT * from Orders
+WHERE customer_name = "Maria Montessori" OR customer_name = "Carl Zeiss"
+
+2.Listázd a 2012.09.10-én leadott 270 dollár értékű rendeléseket!
+SELECT * from Orders
+WHERE ord_date = "2012.09.10"
+AND purch_amt = 270
+
+3.Listázd ki az összes rendelést, amelyet nem Bonnie Barlow adott le!
+SELECT * from Orders
+WHERE NOT customer_name = "Bonnie Barlow"
+
+4.Listázd ki az 1000 dollár feletti rendeléseket!
+SELECT * from Orders
+WHERE purch_amt > 1000
+
+5.Listázzuk ki az M betűt tartalmazó ügyfelek nevét (csak a név jelenjen meg)!
+SELECT customer_name from Orders
+WHERE customer_name LIKE "%[m]%"
+
+6.Listázzuk azokat az ügyfeleket, amelyek nevének 3. karaktere ‚r’ (csak a név jelenjen meg)!
+SELECT customer_name from Orders
+WHERE customer_name LIKE "__r%"
+
+7.Listázzuk ki a 2012 augusztusában leadott rendeléseket
+SELECT * from Orders
+WHERE ord_date BETWEEN "2012.08.01" AND "2012.08.31"
+
+8.Listázzuk ki az 5001, 5002, 5003 azonosítójú eladók által kezelt rendeléseket!
+SELECT * from Orders
+WHERE salesman_id IN(5001, 5002, 5003)
+
+9.Listázzuk ki az ügyfelekhez tartozó rendeléseket a rendelés összege szerint csökkenő sorrendben! (Megjelenő mezők: customer_name, purch_amt)
+SELECT customer_name, purch_amt from Orders
+ORDER BY purch_amt DESC
+
+10.Listázzuk ki az ügyfelek nevét, csak egyedi értékek jelenjenek meg!
+SELECT DISTINCT customer_name from Orders
+
+11.Listázd ki az összes rekordot, ahol nincs megadva a rendelés értéke!
+SELECT * FROM Orders 
+WHERE purch_amt IS NULL;
+
+12.Listázzuk ki a rendelések összértékét, az eredményoszlop neve ‚Összeg’ legyen!
+SELECT SUM(purch_amt) as Összeg from Orders
+
+13.Listázzuk ki az első három legnagyobb értékű rendelést! (LIMIT)
+SELECT * from Orders
+ORDER BY purch_amt DESC LIMIT 3
+
+14.Listázd ki a költések (purch_amt) összegét, átlagát, minimumát, maximumát!
+SELECT SUM(purch_amt), AVG(purch_amt), MIN(purch_amt), MAX(purch_amt) from Orders
+
+15.Listázd ki a rendelések darabszámát!
+SELECT COUNT(*) FROM Orders
+
+16.Listázd ki a rendelések darabszámát eladónként csoportosítva!
+SELECT salesman_id, COUNT(*) FROM Orders 
+GROUP BY salesman_id
+
+17.Listázd ki a rendelések darabszámát és az eladó nevét, ahol a rendelések darabszáma legalább 2!
+https://www.w3schools.com/sql/sql_having.asp
+SELECT salesman_id, COUNT(*) FROM Orders 
+GROUP BY salesman_id 
+HAVING COUNT(*)>=2

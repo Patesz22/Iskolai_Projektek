@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(134, 120, 47);
+    color: rgba(14, 200, 151, 1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table, th, td, tr {
+    color: rgba(14, 200, 151, 1);
+    border: solid 2px black;
+    width: 800px;
+    height: 20px;
+    text-align: center;
+}
+
+ul {
+    border: solid 2px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.kozep {
+    text-align: center;
+}
+
+.sorkoz {
+    color: black;
+}
+
+#fejlec {
+    border-bottom: solid 3px white;
+    border-top: solid 3px white;
+}

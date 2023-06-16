@@ -1,0 +1,52 @@
+Customers
+1. 
+INSERT INTO Customers (CustomerName, ContactName, Country)
+VALUES ("Jamies Italian", "Jamie Oliver", "Hungary");
+
+2.
+ALTER TABLE Customers
+ADD Phone_Number VARCHAR(50);
+
+3.
+DELETE FROM Customers WHERE Country IN ("Brazil", "Mexico");
+
+4.
+UPDATE Customers
+SET Country = "United Kingdom"
+WHERE Country = "UK";
+
+Products
+1.
+INSERT INTO Products (ProductID, ProductName, SupplierID, CategoryID, Unit, Price)
+VALUES ("999999", "Tetszoleges", 1, 19, "1db semmi", 1783);
+
+2.
+ALTER TABLE Products
+ADD Rating INT;
+
+3.
+DELETE FROM Products
+WHERE Price < 15;
+
+4.
+UPDATE Products
+SET Price = 36
+WHERE ProductName = "Gumbär Gummibärchen";
+
+Suppliers
+1.
+INSERT INTO Suppliers (SupplierID, SupplierName, ContactName, Address, City, PostalCode, Country, Phone)
+VALUES ("999999", "Tetszoleges", "Papp Máté", "Uborka utca 76", "Budapest", 1135, "Hungary", "06201231234");
+
+2.
+ALTER TABLE Suppliers
+ADD Rendeles VARCHAR(255);
+
+3.
+DELETE FROM Suppliers
+WHERE SupplierID = 1;
+
+4.
+UPDATE Suppliers
+SET City = "London", Country = "United Kingdom"
+WHERE SupplierName = "Exotic Liquid";

@@ -1,0 +1,37 @@
+0.
+SELECT OrderID, Orders.CustomerID, OrderDate FROM Orders 
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID 
+WHERE CustomerName='Richter Supermarkt';
+
+1.
+SELECT OrderID, OrderDate, Employees.EmployeeID FROM Orders 
+INNER JOIN Employees ON Orders.EmployeeID=Employees.EmployeeID 
+WHERE Employees.FirstName = 'Laura' AND Employees.LastName = 'Callahan';
+
+2.
+SELECT OrderDetails.OrderID, ProductName, Price FROM Products 
+INNER JOIN OrderDetails ON OrderDetails.ProductID=Products.ProductID;
+
+3.
+SELECT ProductName, Suppliers.SupplierName FROM Products 
+INNER JOIN Suppliers ON Products.SupplierID=Suppliers.SupplierID;
+
+4.
+SELECT Suppliers.SupplierName FROM Products 
+INNER JOIN Suppliers ON Products.SupplierID=Suppliers.SupplierID 
+GROUP BY Suppliers.SupplierName
+HAVING COUNT(*)>=5
+
+5.
+SELECT Products.ProductName, OrderDetails.Quantity FROM Products INNER JOIN
+OrderDetails ON Products.ProductID=OrderDetails.ProductID INNER JOIN Orders
+ON OrderDetails.OrderID=Orders.OrderID INNER JOIN Customers ON
+Orders.CustomerID=Customers.CustomerID WHERE CustomerName='Seven Seas Imports'
+
+6.
+SELECT ProductName FROM [Products] WHERE Price>(SELECT AVG(Price) FROM Products)
+
+7.
+SELECT ProductName FROM Products WHERE Price < (SELECT Price FROM Products WHERE ProductName = 'Schoggi Schokolade')
+
+8.
